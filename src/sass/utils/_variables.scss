@@ -1,0 +1,22 @@
+:root {
+  --main-color: #010101;
+
+  --main-background-color: #ffffff;
+  --secondary-background-color: #010101;
+
+  --black-text-color: #010101;
+  --white-text-color: #ffffff;
+
+  --button-background-color: #ffffff;
+  --button-text-color: #ffffff;
+  --button-background-hover-color: #0514f0;
+  --button-text-hover-color: #ffffff;
+  --button-background-disabled-color: #F5F5F5
+  --button-text-disabled-color: #ffffff;
+  
+  --shadow-background-color: #010101;;
+  --other-background-color: #F5F5F5
+
+  --transition-duration: 300ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+ }
