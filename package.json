@@ -2,6 +2,7 @@
   "name": "crypto",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://vplabunets.github.io/crypto/",
   "scripts": {
     "start": "parcel src/*.html",
     "dev": "parcel  src/*.html --open  --port 3000",
