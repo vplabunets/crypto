@@ -1,0 +1,90 @@
+.section-timer {
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--white-text-color);
+}
+
+.timer-gradient {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.container-timer {
+  padding: 56px 0 44px;
+
+  @media screen and (min-width: 744px) {
+    padding: 46px 0 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 209px 0 169px;
+  }
+}
+
+.subtext-timer {
+  margin-bottom: 18px;
+
+  font-family: Rubik;
+  font-size: 0.625rem;
+
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 744px) {
+    font-size: 0.875rem;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 1.5625rem;
+    margin-bottom: 68px;
+  }
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  @media screen and (min-width: 744px) {
+    gap: 8px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 30px;
+  }
+}
+
+.timer-value,
+.timer-devider {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.25rem;
+
+  @media screen and (min-width: 744px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 4.75rem;
+  }
+}
+
+.timer-text {
+  font-size: 0.5rem;
+  font-weight: 500;
+
+  @media screen and (min-width: 744px) {
+    font-size: 0.75rem;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 1.25rem;
+  }
+}
