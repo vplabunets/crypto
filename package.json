@@ -2,10 +2,15 @@
   "name": "crypto",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://vplabunets.github.io/crypto/",
   "scripts": {
     "start": "parcel src/*.html",
     "dev": "parcel  src/*.html --open  --port 3000",
     "build": "parcel build dist/*.html --public-url /crypto/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vplabunets/crypto.git"
   },
   "keywords": [],
   "author": "",
