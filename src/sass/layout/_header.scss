@@ -1,9 +1,8 @@
-<<<<<<< Updated upstream
-/* <!-- HEADER --> */
-=======
+.section-header {
+  background-color: var(--secondary-background-color);
+}
 .header {
   align-self: center;
-  background-color: var(--secondary-background-color);
   color: var(--white-text-color);
   font-family: "Press Start 2P";
   outline: blue dotted 3px;
@@ -40,57 +39,67 @@
   width: 44px;
   height: 44px;
 }
-
+.hero-animation-wrapper {
+  height: 400px;
+}
 .hero-animation {
+  width: 30px;
+  height: 30px;
+  // border: 2px solid #333;
+  border-radius: 50%;
   position: relative;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-origin: center; /* Установка центра вращения в центре элемента */
+  margin-left: 100px;
+  margin-top: 100px;
 
-  @keyframes moveInCircle {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+  animation: rotate 10s linear infinite;
 }
 .hero-letter {
-  color: red;
+  width: 30px;
+  height: 30px;
+  /* background-color: #3498DB; */
+  /* border-radius: 50%; */
   position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 5%;
-  left: 65%;
-  transform-origin: center; /* Установка центра вращения в центре элемента */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (min-width: 744px) {
+    width: 56px;
+    height: 78px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 122px;
+    height: 106px;
+  }
+
+  &:nth-child(1) {
+    transform: translate(-150%, -50%) rotate(0deg) translateX(100px)
+      rotate(0deg);
+  }
   &:nth-child(2) {
-    top: 50%;
-    left: 55%;
-    animation: moveInCircle 10s linear infinite;
-    animation-delay: 2s;
+    transform: translate(-50%, -50%) rotate(72deg) translateX(100px)
+      rotate(-72deg);
   }
   &:nth-child(3) {
-    top: 65%;
-    left: 25%;
-    animation: moveInCircle 10s linear infinite;
-    animation-delay: 4s;
+    transform: translate(50%, -50%) rotate(144deg) translateX(100px)
+      rotate(-144deg);
   }
   &:nth-child(4) {
-    top: 25%;
-    left: 5%;
-    animation: moveInCircle 10s linear infinite;
-    animation-delay: 6s;
+    transform: translate(10%, 50%) rotate(216deg) translateX(100px)
+      rotate(-216deg);
   }
   &:nth-child(5) {
-    top: 5%;
-    left: 25%;
-    animation: moveInCircle 10s linear infinite;
-    animation-delay: 8s;
+    transform: translate(-100%, -10%) rotate(288deg) translateX(100px)
+      rotate(-288deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 .hero-wrapper {
@@ -190,4 +199,3 @@
   font-weight: 300;
   line-height: 1.78;
 }
->>>>>>> Stashed changes
