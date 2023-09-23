@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/*.html",
     "dev": "parcel  src/*.html --open  --port 3000",
-    "build": "parcel build src/index.html --public-url /crypto/"
+    "build": "parcel build dist/index.html --public-url /dist/"
   },
   "repository": {
     "type": "git",
