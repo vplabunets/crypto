@@ -6,23 +6,49 @@
   color: var(--white-text-color);
   font-family: "Press Start 2P";
   outline: blue dotted 3px;
-  // padding: 0 30px;
 }
 
 .nav {
-  width: 100%;
+  position: relative;
+  // padding: 0 40px;
+  outline: red dotted;
+  padding-bottom: 40px;
+  @media screen and (min-width: 744px) {
+    padding: 0 47px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 16px 0 71px 0;
+  }
 }
 .nav-logo-wrapper {
-  outline: red dotted;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 744px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
 }
 .nav-logo-link {
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: baseline;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 336px;
+  @media screen and (min-width: 744px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
 }
 .nav-logo-pic {
   display: block;
@@ -34,64 +60,228 @@
   width: 142px;
   height: 13px;
   margin-right: 34px;
+  @media screen and (min-width: 744px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
 }
 .nav-open-pic {
+  top: 16px;
+  right: 22px;
+  position: absolute;
   width: 44px;
   height: 44px;
+  @media screen and (min-width: 744px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+.nav-button {
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: var(--white-text-color);
+  font-family: Rubik;
+  min-width: 140px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border: 1px solid var(--white-text-color); /* Здесь мы задали стиль и толщину границы */
+  transition: background-color 300ms var(--transition-timing),
+    color 300ms var(--transition-timing);
+  display: none;
+  &:hover,
+  &:focus {
+    color: var(--black-text-color);
+    background-color: var(--main-background-color);
+  }
+  @media screen and (min-width: 744px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    margin-right: 50px;
+  }
+}
+.mob-nav-list-wrapper {
+  // transform: translateX(-100%);
+  // transform: translateY(-100%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  display: none;
+  @media screen and (min-width: 744px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 72px;
+  @media screen and (min-width: 744px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.nav-item {
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 500;
+  &:not(:last-child) {
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 744px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.nav-item-link {
+  cursor: pointer;
+}
+.nav-item-number {
+  margin-right: 12px;
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  line-height: 1.1; /* 1000% */
+  text-transform: uppercase;
+  @media screen and (min-width: 744) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+  }
 }
 .hero-animation-wrapper {
+  position: absolute;
+  top: 100px;
+  right: 90px;
   height: 400px;
+  @media screen and (min-width: 744) {
+    top: 100px;
+    right: 190px;
+    height: 600px;
+  }
+  @media screen and (min-width: 1440px) {
+    top: 200px;
+    right: 290px;
+    height: 400px;
+  }
 }
 .hero-animation {
-  width: 30px;
-  height: 30px;
-  // border: 2px solid #333;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: relative;
   margin-left: 100px;
   margin-top: 100px;
-
   animation: rotate 10s linear infinite;
 }
 .hero-letter {
-  width: 30px;
-  height: 30px;
-  /* background-color: #3498DB; */
-  /* border-radius: 50%; */
+  width: 35px;
+  height: 35px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   @media screen and (min-width: 744px) {
     width: 56px;
     height: 78px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1440px) {
     width: 122px;
     height: 106px;
   }
 
   &:nth-child(1) {
-    transform: translate(-150%, -50%) rotate(0deg) translateX(100px)
-      rotate(0deg);
+    transform: translate(-150%, -50%) rotate(0deg) translateX(80px) rotate(0deg);
+    @media screen and (min-width: 744px) {
+      transform: translate(-150%, -50%) rotate(0deg) translateX(150px)
+        rotate(0deg);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(-150%, -50%) rotate(0deg) translateX(250px)
+        rotate(0deg);
+    }
   }
   &:nth-child(2) {
-    transform: translate(-50%, -50%) rotate(72deg) translateX(100px)
+    transform: translate(-50%, -50%) rotate(72deg) translateX(80px)
       rotate(-72deg);
+    @media screen and (min-width: 744px) {
+      transform: translate(-50%, -50%) rotate(72deg) translateX(150px)
+        rotate(-72deg);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(-50%, -50%) rotate(72deg) translateX(160px)
+        rotate(-72deg);
+    }
   }
   &:nth-child(3) {
-    transform: translate(50%, -50%) rotate(144deg) translateX(100px)
+    transform: translate(50%, -50%) rotate(144deg) translateX(80px)
       rotate(-144deg);
+    @media screen and (min-width: 744px) {
+      transform: translate(50%, -50%) rotate(144deg) translateX(150px)
+        rotate(-144deg);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(50%, -50%) rotate(144deg) translateX(250px)
+        rotate(-144deg);
+    }
   }
   &:nth-child(4) {
-    transform: translate(10%, 50%) rotate(216deg) translateX(100px)
+    transform: translate(10%, 50%) rotate(216deg) translateX(80px)
       rotate(-216deg);
+    @media screen and (min-width: 744px) {
+      transform: translate(10%, 50%) rotate(216deg) translateX(150px)
+        rotate(-216deg);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(10%, 50%) rotate(216deg) translateX(240px)
+        rotate(-216deg);
+    }
   }
   &:nth-child(5) {
-    transform: translate(-100%, -10%) rotate(288deg) translateX(100px)
+    transform: translate(-100%, -10%) rotate(288deg) translateX(80px)
       rotate(-288deg);
+    @media screen and (min-width: 744px) {
+      transform: translate(-100%, -10%) rotate(288deg) translateX(150px)
+        rotate(-288deg);
+    }
+    @media screen and (min-width: 1440px) {
+      transform: translate(-100%, -10%) rotate(288deg) translateX(240px)
+        rotate(-288deg);
+    }
   }
+}
+.hero-animation-icon {
+  animation: rotate 5s linear infinite;
 }
 
 @keyframes rotate {
@@ -104,23 +294,83 @@
 }
 .hero-wrapper {
   padding: 0 30px;
-  padding-bottom: 33px;
+  margin-top: 120px;
+  @media screen and (min-width: 744px) {
+    margin-top: 56px;
+    padding: 0;
+    padding-bottom: 71px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-bottom: 0px;
+  }
+}
+.hero-wrapper-top {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 744px) {
+    flex-direction: column-reverse;
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+.hero-wrapper-middle {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 744px) {
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 20px;
+  }
 }
 .hero-title {
-  margin-top: 120px;
+  display: block;
   font-family: "Press Start 2P";
   font-size: 26px;
   line-height: 1.54;
+  @media screen and (min-width: 744px) {
+    font-size: 48px;
+    line-height: 1.58;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 76px;
+    line-height: 1.2;
+  }
 }
 .hero-date-text {
+  display: block;
   margin-top: 28px;
   font-family: Rubik;
   font-size: 16px;
+  @media screen and (min-width: 744px) {
+    margin-top: 0px;
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
 }
 .hero-place-text {
+  display: block;
   margin-top: 10px;
   font-family: Rubik;
   font-size: 16px;
+  @media screen and (min-width: 744px) {
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
 }
 .hero-bottom-text {
   font-family: Rubik;
@@ -128,6 +378,15 @@
   font-size: 18px;
   line-height: 1.66; /* 166.667% */
   text-transform: uppercase;
+  @media screen and (min-width: 744px) {
+    margin-top: 0px;
+    margin-bottom: 70px;
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+  }
 }
 .hero-button {
   cursor: pointer;
@@ -136,7 +395,7 @@
   color: var(--white-text-color);
   font-family: Rubik;
   margin-top: 34px;
-  width: 260px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   font-weight: 600;
@@ -149,34 +408,50 @@
     color: var(--black-text-color);
     background-color: var(--main-background-color);
   }
-}
-.nav-list {
-  margin-top: 100px;
-  margin-bottom: 72px;
-  padding: 0 30px;
-}
+  @media screen and (min-width: 744px) {
+    width: 260px;
+  }
 
-.nav-item {
-  font-family: Rubik;
-  font-size: 20px;
-  font-weight: 500;
-  &:not(:last-child) {
-    margin-bottom: 34px;
+  @media screen and (min-width: 1440px) {
+    display: none;
   }
 }
 
-.nav-item-number {
-  margin-right: 12px;
-  font-family: "Press Start 2P";
-  font-size: 12px;
-  line-height: 1.1; /* 1000% */
-  text-transform: uppercase;
+.hero-move-down-wrapper {
+  font-family: Rubik;
+  font-size: 14px;
+
+  display: none;
+  @media screen and (min-width: 744px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+.hero-move-down-link {
+  display: flex;
+  cursor: pointer;
+}
+.hero-move-down-text {
+  width: 40px;
+}
+.hero-move-down-img {
+  display: flex;
+  align-self: flex-end;
 }
 .follow-us-wrapper {
-  font-family: Rubik;
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  align-self: flex-start;
+  justify-content: flex-start;
+  font-family: Rubik;
+  @media screen and (min-width: 744px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
 }
 .follow-us-title {
   margin-bottom: 15px;
