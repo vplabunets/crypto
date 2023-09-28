@@ -1,0 +1,62 @@
+.container-text {
+  color: var(--main-color);
+  font-size: 14px;
+  font-family: "Rubik";
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.container-title {
+  color: var(--main-color);
+  font-size: 20px;
+  font-family: "Press Start 2P";
+  text-transform: uppercase;
+  line-height: 32px;
+  word-wrap: break-word;
+  width: 200px;
+}
+// .speakers-container {
+// }
+
+// .speakers-list {
+// }
+
+// .speakers-item {
+// }
+
+.speakers-photo {
+  width: 260px;
+  height: 260px;
+  filter: grayscale(100%);
+
+  &:hover,
+  &:focus {
+    transition: filter 0.5s ease;
+    filter: grayscale(0%);
+  }
+  @media screen and (min-width: 744px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+.speakers-name-text {
+  color: var(--main-color);
+  font-size: 18px;
+  font-family: "Rubik";
+  font-weight: 600;
+  //   line-height: 5;
+  word-wrap: break-word;
+}
+
+.speakers-platform-text {
+  color: var(--main-color);
+  font-size: 14px;
+  font-family: "Rubik";
+  font-weight: 500;
+  //   line-height: 5;
+  word-wrap: break-word;
+}
