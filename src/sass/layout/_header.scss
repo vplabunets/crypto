@@ -1,17 +1,15 @@
 .section-header {
   background-color: var(--secondary-background-color);
 }
+
 .header {
   align-self: center;
   color: var(--white-text-color);
   font-family: "Press Start 2P";
-  outline: blue dotted 3px;
 }
 
 .nav {
   position: relative;
-  // padding: 0 40px;
-  outline: red dotted;
   padding-bottom: 40px;
   @media screen and (min-width: 744px) {
     padding: 0 47px;
@@ -91,7 +89,7 @@
   font-size: 16px;
   font-weight: 600;
   padding: 14px 20px;
-  border: 1px solid var(--white-text-color); /* Здесь мы задали стиль и толщину границы */
+  border: 1px solid var(--white-text-color);
   transition: background-color 300ms var(--transition-timing),
     color 300ms var(--transition-timing);
   display: none;
@@ -110,8 +108,6 @@
   }
 }
 .mob-nav-list-wrapper {
-  // transform: translateX(-100%);
-  // transform: translateY(-100%);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -136,7 +132,6 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
   @media screen and (min-width: 1440px) {
   }
 }
@@ -169,7 +164,7 @@
   margin-right: 12px;
   font-family: "Press Start 2P";
   font-size: 12px;
-  line-height: 1.1; /* 1000% */
+  line-height: 1.1;
   text-transform: uppercase;
   @media screen and (min-width: 744) {
     display: none;
@@ -209,12 +204,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   @media screen and (min-width: 744px) {
     width: 56px;
     height: 78px;
   }
-
   @media screen and (min-width: 1440px) {
     width: 122px;
     height: 106px;
@@ -314,7 +307,6 @@
     flex-direction: column-reverse;
     margin-bottom: 26px;
   }
-
   @media screen and (min-width: 1440px) {
   }
 }
@@ -327,7 +319,6 @@
     justify-content: center;
     margin-top: 10px;
   }
-
   @media screen and (min-width: 1440px) {
     margin-bottom: 20px;
   }
@@ -341,7 +332,6 @@
     font-size: 48px;
     line-height: 1.58;
   }
-
   @media screen and (min-width: 1440px) {
     font-size: 76px;
     line-height: 1.2;
@@ -356,10 +346,10 @@
     margin-top: 0px;
     margin-right: 40px;
   }
-
   @media screen and (min-width: 1440px) {
   }
 }
+
 .hero-place-text {
   display: block;
   margin-top: 10px;
@@ -372,22 +362,23 @@
   @media screen and (min-width: 1440px) {
   }
 }
+
 .hero-bottom-text {
   font-family: Rubik;
   margin-top: 40px;
   font-size: 18px;
-  line-height: 1.66; /* 166.667% */
+  line-height: 1.66;
   text-transform: uppercase;
   @media screen and (min-width: 744px) {
     margin-top: 0px;
     margin-bottom: 70px;
     width: 50%;
   }
-
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
   }
 }
+
 .hero-button {
   cursor: pointer;
   box-sizing: border-box;
@@ -400,7 +391,7 @@
   font-size: 16px;
   font-weight: 600;
   padding: 14px auto;
-  border: 1px solid var(--white-text-color); /* Здесь мы задали стиль и толщину границы */
+  border: 1px solid var(--white-text-color);
   transition: background-color 300ms var(--transition-timing),
     color 300ms var(--transition-timing);
   &:hover,
@@ -420,26 +411,28 @@
 .hero-move-down-wrapper {
   font-family: Rubik;
   font-size: 14px;
-
   display: none;
   @media screen and (min-width: 744px) {
   }
-
   @media screen and (min-width: 1440px) {
     display: flex;
   }
 }
+
 .hero-move-down-link {
   display: flex;
   cursor: pointer;
 }
+
 .hero-move-down-text {
   width: 40px;
 }
+
 .hero-move-down-img {
   display: flex;
   align-self: flex-end;
 }
+
 .follow-us-wrapper {
   display: flex;
   flex-direction: column;
@@ -449,15 +442,16 @@
   @media screen and (min-width: 744px) {
     display: none;
   }
-
   @media screen and (min-width: 1440px) {
   }
 }
+
 .follow-us-title {
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: 500;
 }
+
 .follow-us-list {
   display: flex;
 }
@@ -467,6 +461,7 @@
     margin-right: 12px;
   }
 }
+
 .follow-us-link {
   cursor: pointer;
   color: #676b70;

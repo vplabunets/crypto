@@ -2,11 +2,11 @@
   "name": "crypto",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://vplabunets.github.io/crypto/",
+  "homepage": "https://vplabunets.github.io/crypto",
   "scripts": {
     "start": "parcel src/*.html",
     "dev": "parcel  src/*.html --open  --port 3000",
-    "build": "parcel build dist/*.html --public-url /crypto/"
+    "build": "parcel build src/index.html --public-url /crypto/"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
     "@parcel/transformer-sass": "^2.9.3",
     "parcel": "^2.9.3",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "posthtml-modules": "^0.9.1"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
