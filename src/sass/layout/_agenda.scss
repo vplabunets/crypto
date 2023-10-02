@@ -1,0 +1,247 @@
+.section-agenta {
+  z-index: 3;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 56px;
+  border-left: 1px solid #f5f5f5;
+
+  @media screen and (min-width: 744px) {
+    margin-left: 55px;
+    margin-right: 136px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    margin-left: 280px;
+    margin-right: 56px;
+  }
+}
+
+.section-agenta-name {
+  font-family: Rubik;
+  margin-top: 38px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 744px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 62px;
+    margin-bottom: 59px;
+    font-size: 16px;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    border-top: 1px solid #010101;
+    margin-right: 10px;
+    vertical-align: super;
+
+    @media screen and (min-width: 1440px) {
+      width: 77px;
+      margin-right: 16px;
+      position: absolute;
+      top: 8px;
+      left: -89px;
+    }
+  }
+}
+
+.section-agenta-title {
+  width: 260px;
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  margin-bottom: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 744px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 60px;
+    width: 780px;
+    height: 180px;
+    line-height: 90px;
+    margin-bottom: 78px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+}
+
+.section-agenta-label {
+  @media screen and (min-width: 1440px) {
+    margin: 26px 0 34px 0;
+    color: #f5f5f5;
+    font-family: Rubik;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 50px;
+    transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 250px;
+    width: 420px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    z-index: -1;
+  }
+  &:hover,
+  :focus {
+    color: #0513e6;
+  }
+}
+
+.section-agenta-label-wrap {
+  visibility: hidden;
+
+  @media screen and (min-width: 1440px) {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.agenta-card-list {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (max-width: 744px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 36px;
+    margin-right: 112px;
+  }
+}
+.agenta-card-list li:nth-child(n + 5) {
+  @media screen and (min-width: 744px) {
+    display: none;
+  }
+}
+.agenta-card-list li:nth-child(n + 2) {
+  @media screen and (max-width: 744px) {
+    display: none;
+  }
+}
+.agenta-card-list li:nth-child(2n) {
+  margin-left: 34px;
+  @media screen and (min-width: 1440) {
+    margin-left: 52px;
+  }
+}
+
+.agenta-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 259px;
+  display: flex;
+  border-bottom: 1px solid #f5f5f5;
+  @media screen and (min-width: 744px) {
+    max-width: calc(50% - 34px);
+  }
+  @media screen and (min-width: 1440px) {
+    width: 508px;
+  }
+}
+
+.agenta-card-number {
+  margin-right: 14px;
+  color: #010101;
+  font-size: 16px;
+  font-family: "Press Start 2P";
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.agenta-card-title {
+  color: #010101;
+  font-size: 16px;
+  font-family: Rubik;
+  font-weight: 700;
+  line-height: 20px;
+  word-wrap: break-word;
+  margin-bottom: 6px;
+}
+.agenta-card-author {
+  color: #010101;
+  font-size: 14px;
+  font-family: Rubik;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.agenta-card-text {
+  color: #010101;
+  font-size: 16px;
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.agenta-scroll-wrap {
+  margin-top: 17px;
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (min-width: 1440px) {
+    margin-right: 112px;
+  }
+}
+.agenta-scroll-button-text {
+  color: #010101;
+  font-size: 16px;
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 25px;
+}
+.agenta-scroll-arrow {
+  margin-left: 25px;
+  width: 37px;
+  height: 18px;
+}
+
+.agenta-scroll-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.section-agenta-lower-label {
+  @media screen and (min-width: 1440px) {
+    color: #f5f5f5;
+    font-size: 250px;
+    font-family: Rubik;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 200px;
+    word-wrap: break-word;
+    transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  :focus {
+    color: #0513e6;
+  }
+}
+
+.section-agenta-lower-label-wrap {
+  visibility: hidden;
+
+  @media screen and (min-width: 1440px) {
+    width: 554px;
+    height: 200px;
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 610px;
+    left: -214px;
+    z-index: -1;
+  }
+}
