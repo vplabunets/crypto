@@ -1,3 +1,14 @@
+@keyframes rowAnimation {
+  0% {
+    transform: translateX(7px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(7px);
+  }
+}
 .footer {
   background-color: var(--main-color);
   padding: 20px 0 14px;
@@ -157,6 +168,8 @@
   display: block;
   width: 12px;
   height: 10px;
+  animation: rowAnimation 1.5s infinite ease-in-out;
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -166,7 +179,7 @@
   display: none;
   width: 37px;
   height: 18px;
-
+  animation: rowAnimation 1.5s infinite ease-in-out;
   @media screen and (min-width: 1280px) {
     display: block;
   }
@@ -233,6 +246,7 @@
     margin-bottom: 50px;
     display: none;
   }
+
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
