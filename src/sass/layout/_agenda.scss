@@ -1,31 +1,38 @@
-.section-agenta {
-  z-index: 3;
-  margin-top: 40px;
+.section-wrapper {
   margin-left: 30px;
-  margin-right: 56px;
   border-left: 1px solid #f5f5f5;
-
   @media screen and (min-width: 744px) {
     margin-left: 55px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 281px;
+  }
+}
+
+.section-agenta {
+  z-index: 3;
+  max-width: 1980px;
+  margin-right: 56px;
+
+  @media screen and (min-width: 744px) {
     margin-right: 136px;
   }
 
   @media screen and (min-width: 1440px) {
     position: relative;
-    margin-left: 280px;
     margin-right: 56px;
   }
 }
 
 .section-agenta-name {
   font-family: Rubik;
-  margin-top: 38px;
+  margin-top: 40px;
   margin-bottom: 30px;
   font-size: 14px;
   text-transform: uppercase;
 
   @media screen and (min-width: 744px) {
-    margin-top: 40px;
+    margin-top: 38px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -46,21 +53,44 @@
       width: 77px;
       margin-right: 16px;
       position: absolute;
-      top: 8px;
+      top: 9px;
       left: -89px;
     }
   }
 }
 
+.desktop-title {
+  display: block;
+  @media screen and (min-width: 744px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.tablet-title {
+  display: none;
+  @media screen and (min-width: 744px) {
+    display: block;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
 .section-agenta-title {
   width: 260px;
+  font-size: 20px;
   font-family: "Press Start 2P";
-  font-size: 14px;
-  margin-bottom: 22px;
+  font-weight: 400;
   line-height: 32px;
   text-transform: uppercase;
+  margin-bottom: 22px;
 
   @media screen and (min-width: 744px) {
+    width: 400px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
 
@@ -69,26 +99,17 @@
     width: 780px;
     height: 180px;
     line-height: 90px;
-    margin-bottom: 78px;
-    border-bottom: 1px solid #f5f5f5;
   }
 }
 
 .section-agenta-label {
   @media screen and (min-width: 1440px) {
-    margin: 26px 0 34px 0;
     color: #f5f5f5;
-    font-family: Rubik;
-    font-weight: 800;
     text-transform: uppercase;
-    line-height: 50px;
-    transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: Rubik;
     font-size: 250px;
-    width: 420px;
-    height: 200px;
-    position: absolute;
-    top: 180px;
-    z-index: -1;
+    font-weight: 800;
+    transition: color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:hover,
   :focus {
@@ -97,12 +118,17 @@
 }
 
 .section-agenta-label-wrap {
-  visibility: hidden;
+  display: none;
 
   @media screen and (min-width: 1440px) {
-    visibility: visible;
     display: flex;
+    visibility: visible;
     justify-content: flex-end;
+    position: absolute;
+    top: 135px;
+    right: 0px;
+    line-height: 0.8;
+    z-index: -1;
   }
 }
 
@@ -111,12 +137,44 @@
   gap: 0;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media screen and (max-width: 744px) {
-    justify-content: space-between;
+
+  @media screen and (min-width: 744px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    border-bottom: 1px solid #f5f5f5;
   }
   @media screen and (min-width: 1440px) {
-    margin-left: 36px;
-    margin-right: 112px;
+    border-top: 1px solid #f5f5f5;
+    grid-column-gap: 52px;
+    margin-top: 78px;
+  }
+}
+
+.agenta-card {
+  padding-bottom: 8px;
+  width: 259px;
+  display: flex;
+  border-bottom: 1px solid #f5f5f5;
+  @media screen and (min-width: 744px) {
+    padding-bottom: 30px;
+    width: 265px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 35px;
+    padding-top: 30px;
+    width: 508px;
+    padding-bottom: 44px;
+  }
+}
+.agenta-card-list li:nth-child(4n - 3),
+.agenta-card-list li:nth-child(4n - 2) {
+  @media screen and (min-width: 744px) {
+    padding-top: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 30px;
   }
 }
 .agenta-card-list li:nth-child(n + 5) {
@@ -130,23 +188,10 @@
   }
 }
 .agenta-card-list li:nth-child(2n) {
-  margin-left: 34px;
   @media screen and (min-width: 1440) {
-    margin-left: 52px;
-  }
-}
+    border-left: 1px solid #f5f5f5;
 
-.agenta-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 259px;
-  display: flex;
-  border-bottom: 1px solid #f5f5f5;
-  @media screen and (min-width: 744px) {
-    max-width: calc(50% - 34px);
-  }
-  @media screen and (min-width: 1440px) {
-    width: 508px;
+    margin-right: 168px;
   }
 }
 
@@ -168,6 +213,10 @@
   line-height: 20px;
   word-wrap: break-word;
   margin-bottom: 6px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 25px;
+  }
 }
 .agenta-card-author {
   color: #010101;
@@ -175,6 +224,13 @@
   font-family: Rubik;
   font-weight: 500;
   margin-bottom: 8px;
+  @media screen and (min-width: 744px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 32.36px;
+  }
 }
 .agenta-card-text {
   color: #010101;
@@ -185,13 +241,8 @@
 }
 
 .agenta-scroll-wrap {
-  margin-top: 17px;
-  margin-bottom: 54px;
-  display: flex;
-  justify-content: flex-end;
-  @media screen and (min-width: 1440px) {
-    margin-right: 112px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .agenta-scroll-button-text {
   color: #010101;
@@ -204,13 +255,30 @@
   margin-left: 25px;
   width: 37px;
   height: 18px;
+  animation: rowAnimation 1.5s infinite ease-in-out;
 }
-
+.empty-scroll-wrap {
+  border-right: 1px solid #f5f5f5;
+  @media screen and (min-width: 744px) {
+    border-right: none;
+  }
+}
 .agenta-scroll-button {
+  margin-top: 19px;
+  padding-bottom: 54px;
   cursor: pointer;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   user-select: none;
+  @media screen and (min-width: 744px) {
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 48px;
+    margin-right: 84px;
+    padding-bottom: 129px;
+  }
 }
 
 .section-agenta-lower-label {
@@ -227,11 +295,12 @@
   &:hover,
   :focus {
     color: #0513e6;
+    z-index: 100;
   }
 }
 
 .section-agenta-lower-label-wrap {
-  visibility: hidden;
+  display: none;
 
   @media screen and (min-width: 1440px) {
     width: 554px;
@@ -240,8 +309,8 @@
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 610px;
-    left: -214px;
+    top: 690px;
+    left: -224px;
     z-index: -1;
   }
 }
