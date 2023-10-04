@@ -1,0 +1,120 @@
+.section-sponsors {
+  margin-left: 31px;
+  padding-top: 40px;
+  border-top: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
+
+  font-family: "Rubik", sans-serif;
+
+  position: relative;
+
+  @media screen and (min-width: 744px) {
+    margin-left: 55px;
+  }
+}
+
+.section-sponsors-name {
+  color: var(--main-color);
+  font-size: 0.875rem;
+  line-height: 1.185;
+  position: relative;
+
+  margin-left: 56px;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 157px;
+    margin-bottom: 59px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 1px;
+    background-color: var(--main-color);
+    left: -56px;
+    top: 50%;
+  }
+}
+
+.sponsors-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.25rem;
+
+  text-transform: uppercase;
+  margin-bottom: 19px;
+
+  @media screen and (min-width: 744px) {
+    margin-bottom: 43px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 3.75rem;
+    margin-left: 250px;
+  }
+}
+
+.sponsors-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  @media screen and (min-width: 744px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    margin-bottom: 74px;
+    margin-right: 206px;
+  }
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin-left: 250px;
+    margin-right: 0;
+  }
+}
+
+.sponsors-list-item {
+  border-top: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+
+  & img {
+    width: 100px;
+
+    @media screen and (min-width: 1280px) {
+      width: 200px;
+    }
+  }
+}
+
+.section-sponsors-label-wrapper {
+  display: none;
+  @media screen and (min-width: 744px) {
+    display: block;
+    position: absolute;
+    right: 55px;
+    bottom: 99px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.section-sponsors-label {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 0.35;
+  color: #f5f5f5;
+
+  transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--button-background-hover-color);
+  }
+}
