@@ -15,7 +15,7 @@
 }
 
 .container-timer {
-  padding: 56px 0 44px;
+  padding: 56px 50px 44px;
 
   @media screen and (min-width: 744px) {
     padding: 46px 0 47px;
@@ -48,7 +48,10 @@
 .timer {
   display: flex;
   justify-content: center;
-  gap: 10px;
+
+  @media screen and (min-width: 744px) {
+    gap: 10px;
+  }
 }
 
 .timer-wrapper {

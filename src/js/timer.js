@@ -27,10 +27,11 @@ function updateTimer() {
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
 
     refs.days.textContent = days;
     refs.hours.textContent = hours;
-    refs.minutes.textContent = minutes;
+    refs.minutes.textContent = formattedMinutes;
     refs.seconds.textContent = formattedSeconds;
   }
 }
