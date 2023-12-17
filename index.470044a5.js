@@ -1,0 +1,3 @@
+const e={days:document.querySelector(".days"),hours:document.querySelector(".hours"),minutes:document.querySelector(".minutes"),seconds:document.querySelector(".seconds")},t=new Date;function o(){let o=new Date,n=t-o;if(n<=0)e.days.textContent="00",e.hours.textContent="00",e.minutes.textContent="00",e.seconds.textContent="00";else{let t=Math.floor(n%36e5/6e4),o=Math.floor(n%6e4/1e3),s=o<10?`0${o}`:o,r=t<10?`0${t}`:t;e.days.textContent=Math.floor(n/864e5),e.hours.textContent=Math.floor(n%864e5/36e5),e.minutes.textContent=r,e.seconds.textContent=s}}t.setDate(t.getDate()+61),t.setHours(7,36,7),o(),setInterval(o,1e3);//# sourceMappingURL=index.470044a5.js.map
+
+//# sourceMappingURL=index.470044a5.js.map
