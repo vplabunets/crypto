@@ -82,9 +82,13 @@
     width: 100px;
     height: auto;
 
+      @media screen and (min-width: 744px) {
+height: fit-content;
+      }
+
     @media screen and (min-width: 1280px) {
       width: 200px;
-      height: fit-content;
+
     }
   }
 }
