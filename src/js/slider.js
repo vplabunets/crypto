@@ -1,10 +1,28 @@
 (() => {
   const scrollButton = document.querySelector(".agenta-scroll-button");
   const cardList = document.querySelectorAll(".agenta-card-list li");
-  const screenWidth = window.innerWidth;
+
+  let screenWidth = window.innerWidth;
 
   let currentCardIndex = screenWidth > 744 ? 4 : 1;
   let cardsPerPage = screenWidth > 744 ? 4 : 1;
+
+  window.addEventListener("resize", () => {
+    screenWidth = window.innerWidth;
+
+    cardsPerPage = screenWidth > 744 ? 4 : 1;
+
+    cardList.forEach((card, index) => {
+      if (
+        index < currentCardIndex ||
+        index >= currentCardIndex + cardsPerPage
+      ) {
+        card.style.display = "none";
+      } else {
+        card.style.display = "flex";
+      }
+    });
+  });
 
   scrollButton.addEventListener("click", () => {
     cardList.forEach((card) => {

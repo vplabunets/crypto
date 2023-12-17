@@ -1,62 +1,166 @@
-.container-text {
-  color: var(--main-color);
-  font-size: 14px;
-  font-family: "Rubik";
-  text-transform: uppercase;
-  word-wrap: break-word;
+div.speakers-wrapper {
+  margin: 0 30px;
+  border-left: 1px solid #f5f5f5;
+
+  @media screen and (min-width: 744px) {
+    margin: 0 55px;
+    border-left: none;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #f5f5f5;
+  }
 }
 
-.container-title {
-  color: var(--main-color);
+.speaker-title-wrapper {
+  position: relative;
+  margin-left: 30px;
+  border-left: 1px solid #f5f5f5;
+
+  padding-bottom: 22px;
+
+  @media screen and (min-width: 744px) {
+    padding-bottom: 20px;
+    margin-left: 55px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 281px;
+    padding-bottom: 108px;
+  }
+}
+
+.section-speakers-name {
+  font-family: Rubik;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 96px;
+    margin-bottom: 59px;
+    font-size: 16px;
+    padding-top: 0px;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    border-top: 1px solid #010101;
+    margin-right: 10px;
+    vertical-align: super;
+
+    @media screen and (min-width: 1440px) {
+      width: 77px;
+      margin-right: 16px;
+      position: absolute;
+      top: 10px;
+      left: -89px;
+    }
+  }
+}
+
+.section-speakers-title {
+  max-width: 200px;
   font-size: 20px;
   font-family: "Press Start 2P";
-  text-transform: uppercase;
+  font-weight: 400;
   line-height: 32px;
-  word-wrap: break-word;
-  width: 200px;
-}
-// .speakers-container {
-// }
+  text-transform: uppercase;
 
-// .speakers-list {
-// }
-
-// .speakers-item {
-// }
-
-.speakers-photo {
-  width: 260px;
-  height: 260px;
-  filter: grayscale(100%);
-
-  &:hover,
-  &:focus {
-    transition: filter 0.5s ease;
-    filter: grayscale(0%);
-  }
   @media screen and (min-width: 744px) {
+    max-width: 320px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1440px) {
-    width: 320px;
-    height: 320px;
+    font-size: 60px;
+    max-width: 960px;
+    height: 180px;
+    line-height: 90px;
+  }
+}
+
+.speakers-list {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 744px) {
+    flex-wrap: nowrap;
+    gap: 34px;
+    border-left: 1px solid #f5f5f5;
+  }
+
+  @media screen and (min-width: 1440px) {
+    row-gap: 134px;
+    column-gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+.speakers-item {
+  flex-direction: column;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.speakers-photo {
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1440px) {
+    filter: grayscale(100%);
+    transition: filter 350ms ease-in-out;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 }
 
 .speakers-name-text {
   color: var(--main-color);
+  font-family: Rubik;
+
   font-size: 18px;
-  font-family: "Rubik";
   font-weight: 600;
-  //   line-height: 5;
-  word-wrap: break-word;
+
+  margin-bottom: 2px;
 }
 
 .speakers-platform-text {
   color: var(--main-color);
+  font-family: Rubik;
   font-size: 14px;
-  font-family: "Rubik";
+
   font-weight: 500;
-  //   line-height: 5;
-  word-wrap: break-word;
+}
+
+.speakers-btn-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 19px;
+
+  border-bottom: 1px solid #f5f5f5;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.speakers-btn-list button {
+  background-color: transparent;
+  border: none;
+}
+
+.speakers-slider-prev {
+  transform: scaleX(-1);
 }

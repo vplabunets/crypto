@@ -264,20 +264,22 @@
   }
 }
 .agenta-scroll-button {
-  margin-top: 19px;
-  padding-bottom: 54px;
+  margin: 19px 0 54px;
+
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   user-select: none;
+
+  border: none;
+  background-color: transparent;
+
   @media screen and (min-width: 744px) {
     padding-bottom: 36px;
   }
   @media screen and (min-width: 1440px) {
-    margin-top: 48px;
-    margin-right: 84px;
-    padding-bottom: 129px;
+    margin: 48px 84px 129px 0;
   }
 }
 
