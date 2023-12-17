@@ -393,6 +393,10 @@
   font-family: Rubik;
   font-size: 14px;
   display: none;
+
+  color: var(--white-text-color);
+  cursor: pointer;
+
   @media screen and (min-width: 744px) {
   }
   @media screen and (min-width: 1440px) {

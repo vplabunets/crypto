@@ -5,12 +5,11 @@
 
   let screenWidth = window.innerWidth;
 
-  let currentCardIndex = getCards();
+  let currentCardIndex = 0;
   let cardsPerPage = getCards();
 
-  console.log(cardList.length);
-
   function getCards() {
+    if (screenWidth < 744) return 1;
     if (screenWidth > 744 && screenWidth < 1440) return 3;
     else if (screenWidth >= 1440) return cardList.length;
   }
@@ -66,7 +65,8 @@
   nextButton.addEventListener("click", showNextCards);
   prevButton.addEventListener("click", showPrevCards);
 
-  // Initial card visibility setup
-  updateCardVisibility();
-  updateButtonsAvailability();
+  if (screenWidth < 1440) {
+    updateCardVisibility();
+    updateButtonsAvailability();
+  }
 })();

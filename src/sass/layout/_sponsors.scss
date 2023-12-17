@@ -1,40 +1,36 @@
 .section-sponsors {
-  margin-left: 31px;
-  padding-top: 40px;
-  border-top: 1px solid #f5f5f5;
-  border-left: 1px solid #f5f5f5;
-
-  font-family: "Rubik", sans-serif;
-
   position: relative;
-
-  @media screen and (min-width: 744px) {
-    margin-left: 55px;
-  }
 }
 
 .section-sponsors-name {
-  color: var(--main-color);
-  font-size: 0.875rem;
-  line-height: 1.185;
-  position: relative;
+  font-family: Rubik;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
 
-  margin-left: 56px;
-  margin-bottom: 26px;
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 157px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 96px;
     margin-bottom: 59px;
+    font-size: 16px;
+    padding-top: 0px;
   }
 
   &::before {
     content: "";
-    position: absolute;
-    width: 47px;
-    height: 1px;
-    background-color: var(--main-color);
-    left: -56px;
-    top: 50%;
+    display: inline-block;
+    width: 46px;
+    border-top: 1px solid #010101;
+    margin-right: 10px;
+    vertical-align: super;
+
+    @media screen and (min-width: 1440px) {
+      width: 77px;
+      margin-right: 16px;
+      position: absolute;
+      top: 10px;
+      left: -89px;
+    }
   }
 }
 
@@ -51,7 +47,6 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 3.75rem;
-    margin-left: 250px;
   }
 }
 
@@ -71,7 +66,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
-    margin-left: 250px;
     margin-right: 0;
   }
 }
