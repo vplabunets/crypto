@@ -1,6 +1,7 @@
 # CryptoBEAR Event Landing Page
 
 Welcome to the CryptoBEAR event landing page! Here, you'll find all the information you need about our upcoming blockchain conference.
+![Image 1](/src/assets/crypto.gif)
 
 ## About the Event
 
@@ -24,8 +25,6 @@ To view the event landing page, simply open the `index.html` file in your web br
 - Stylish and responsive design, ensuring a great user experience across devices.
 - Integration of Google Fonts for beautiful typography.
 - Usage of modern web development tools and libraries for efficient development.
-  ![Image 1](/src/assets/crytpo1.png)
-  ![Image 2](/src/assets/crypto2.png)
 
 ## Contributing
 
